@@ -4,15 +4,15 @@ int led = 9; // 9 refers to input pin 9
 void shortFlash(){
   //short
   digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);               // wait for a second
+  delay(500);               // wait for 0.5 second
   digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);               // wait for a second
+  delay(500);               // wait for 0.5 second
   digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);               // wait for a second
+  delay(500);               // wait for 0.5 second
   digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
   delay(500); 
   digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);               // wait for a second
+  delay(500);               // wait for 0.5 second
   digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
   delay(500);   
   
