@@ -1,30 +1,22 @@
-int sensorValue;
-float voltage;
-float temperature;
-int sensorPin = A0;
+int potPin = 0; 
+int val;
+int dat;
 
 void setup() {
-  pinMode(sensorPin, INPUT);
+  pinMode(potPin, INPUT);
   Serial.begin(9600);
   pinMode(8, OUTPUT);
 
 }
 
 void loop() {
-  sensorValue = analogRead(sensorPin);
-  voltage = (float)(voltage);
-  voltage = (sensorValue / 1024.01) * 5;
-  temperature = (float)(temperature);
-  temperature = (voltage - 0.5) * 100;
+  val=analogRead(0);
+  dat=(125*val)>>8;   // 125/2^8 = 125/256=0.4882812
+  Serial.print("Celsius Temperature:");  
+  Serial.print(dat);          
+  Serial.println("C");  
 
-  Serial.print("Sensor Value:  ");
-  Serial.print(sensorValue);
-  Serial.print(" , Volt:");
-  Serial.print(voltage);
-  Serial.print(" , degrees C:");
-  Serial.println(temperature);
-  delay(100);
-  if (temperature < 20) {
+  if (dat < 20) {
     for (int count = 0; count < 10; count++) {
       tone(8,1000);
       delay(50);
