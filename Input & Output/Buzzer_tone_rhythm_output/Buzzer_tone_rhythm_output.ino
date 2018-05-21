@@ -23,23 +23,31 @@ void loop()
 // 2nd note "re"
   tone(speakerPin, rootPitch*9/8, 250);
   //COMPLETE HERE AND BELOW
+    delay(1000); // Wait for 1000 millisecond(s)
+
 
 // 3rd note "mi"
-  tone(speakerPin, rootPitch*5/4);
+  tone(speakerPin, rootPitch*5/4, 250);
+  delay(1000); // Wait for 1000 millisecond(s)
   
 // 4th note "fa"
-  tone(speakerPin, rootPitch*4/3);
+  tone(speakerPin, rootPitch*4/3, 250);
+  delay(1000); // Wait for 1000 millisecond(s)
 
 // 5th note "sol"
-  tone(speakerPin, rootPitch*3/2);
+  tone(speakerPin, rootPitch*3/2, 250);
+  delay(1000); // Wait for 1000 millisecond(s)
 
 // 6th note "la"
-  tone(speakerPin, rootPitch*5/3);
+  tone(speakerPin, rootPitch*5/3, 250);
+  delay(1000); // Wait for 1000 millisecond(s)
 
 // 7th note "ti"
-  tone(speakerPin, rootPitch*15/8);
+  tone(speakerPin, rootPitch*15/8, 250);
+  delay(1000); // Wait for 1000 millisecond(s)
 
 // octave "do"
-  tone(speakerPin, rootPitch*2/1);
+  tone(speakerPin, rootPitch*2/1, 250);
+  delay(1000); // Wait for 1000 millisecond(s)
 
 }
